@@ -1,7 +1,12 @@
 #include <stdio.h>
 
 int main(){
-    // Problem: Print Happy Birthday 1 Lakh times
+    int i = 0;
+    while(i<=100){
     printf("Happy Birthday!\n"); 
+    i++;
+}
+    
+
     return 0;
 }

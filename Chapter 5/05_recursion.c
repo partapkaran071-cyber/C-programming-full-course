@@ -1,22 +1,30 @@
 #include <stdio.h>
 
 int factorial(int);
-    // Factorial(5) = 1 X 2 X 3 X 4 X 5
-    // Factorial(4) = 1 X 2 X 3 X 4
-    // Factorial(3) = 1 X 2 X 3
-    // Factorial(n) = 1 x 2 X 3 X .... X n-1 X n
-    //  = 1 x 2 X 3 X .... X n-1
 
-int factorial(int n){ 
-    if(n == 1 || n == 0){ // Base condition
+
+
+// Factorial(5) = 1 X 2 X 3 X 4 X 5
+// Factorial(4) = 1 X 2 X 3 X 4 
+// Factorial(3) = 1 X 2 X 3 
+
+
+// Factorial(n) =1 X 2 X 3 n-1 X n
+int factorial (int n){
+    if (n == 1 || n == 0)
+    {
         return 1;
     }
-    // Factorial(n) = Factorial(n-1) X n
-    return n * factorial(n-1);
+    return factorial(n-1)*n;
 }
 
-int main(){
-    int a = 6;
-    printf("The factorial of %d is %d", a, factorial(a));
-    return 0;
-}
+    int main(){
+
+        int a;
+        printf("enter the number");
+        scanf("%d",&a);
+        printf("the factorial of %d is %d",a,factorial(a));
+        return 0;
+    }
+
+    
