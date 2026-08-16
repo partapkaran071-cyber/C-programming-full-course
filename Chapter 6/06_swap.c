@@ -1,16 +1,19 @@
 #include <stdio.h>
+void swap(int*,int*);
+void swap(int*ptr1,int*ptr2){
+    int temp = *ptr1;
+    *ptr1=*ptr2;
+    *ptr2=temp;
 
-void swap(int* a, int* b);
 
-void swap(int* a, int* b){
-    int temp;
-    temp = *a;
-    *a = *b;
-    *b = temp;
 }
+
 int main(){
-    int a = 4, b = 6;
-    swap(&a, &b);
-    printf("The value of a is %d and the value of b is %d", a, b);
+    int x =10;
+    int y =20;
+    printf("the value of x is=%d ,the value of y is =%d\n",x,y);
+    swap(&x,&y);
+    printf("the value of x is=%d ,the value of y is =%d\n",x,y);
+
     return 0;
 }

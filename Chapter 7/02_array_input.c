@@ -1,25 +1,26 @@
 #include <stdio.h>
 
 int main(){
-    int marks[5];  
+    //int marks1,marks2,marks3,marks4,marks5;
+    int marks[5];
+    printf("Total marks scored in english\n");
+    scanf("%d",&marks[0]);
+     printf("Total marks scored in hindi\n");
+    scanf("%d",&marks[1]); 
+    printf("Total marks scored in maths\n");
+    scanf("%d",&marks[2]);
+     printf("Total marks scored in science\n");
+    scanf("%d",&marks[3]);
+     printf("Total marks scored in socialscience\n");
+    scanf("%d",&marks[4]);
 
-    printf("Enter marks of 5 students\n");
+    printf("Marks in english is :%d\n",marks[0]);
+    printf("Marks in hindi is :%d\n",marks[1]);
+    printf("Marks in math is :%d\n",marks[2]);
+    printf("Marks in science is :%d\n",marks[3]);
+    printf("Marks in social science is :%d\n",marks[4]);
 
-    // scanf("%d", &marks[0]);
-    // scanf("%d", &marks[1]);
-    // scanf("%d", &marks[2]);
-    // scanf("%d", &marks[3]);
-    // scanf("%d", &marks[4]);
-    for (int i = 0; i < 5; i++)
-    {
-        scanf("%d", &marks[i]);
-    }
 
-      for (int i = 0; i < 5; i++)
-    {
-        printf("The value of marks at index %d is %d\n", i, marks[i]);
-    }
-    
  
     return 0;
 }
