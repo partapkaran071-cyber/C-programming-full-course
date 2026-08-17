@@ -2,33 +2,22 @@
 
 int main()
 {
-    int arr[3][2];
-
-    for (int i = 0; i < 3; i++)
-    {
-        for (int j = 0; j < 2; j++)
-        {
-            printf("Enter the value of arr[%d][%d]\n", i, j);
-            scanf("%d", &arr[i][j]);
+    int arr[2][3];
+    int sum = 0;
+    for(int row = 0; row < 2; row++ ){
+        for(int col = 0;  col < 3; col++){
+            printf("Enter the value at arr[%d][%d]",row,col);
+            scanf("%d",&arr[row][col]);
+            sum += arr[row][col];
         }
     }
-
-    // for (int i = 0; i < 3; i++)
-    // {
-    //     for (int j = 0; j < 2; j++)
-    //     {
-    //         printf("The value of arr[%d][%d] is %d\n", i, j, arr[i][j]);
-    //     }
-    // }
-
-    for (int i = 0; i < 3; i++)
-    {
-        for (int j = 0; j < 2; j++)
-        {
-            printf("%d ", arr[i][j]);
+    for(int row = 0; row < 2; row++ ){
+        for(int col = 0;  col < 3; col++){
+            printf("the value at  arr[%d][%d] is = %d\n ",row,col,arr[row][col]);
         }
-        printf("\n");
     }
+    printf("the sum of total array elemts are = %d\n",sum);
+
 
     return 0;
-}
+    }
