@@ -6,5 +6,7 @@ int main(){
 
     scanf("%c",&character);
     printf("the value of x is : %c\n",*ptr);
+    printf("welcome to my channel ");
     return 0;
+
 }

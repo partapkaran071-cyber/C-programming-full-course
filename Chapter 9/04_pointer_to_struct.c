@@ -1,21 +1,21 @@
 #include <stdio.h>
 
-struct employee
+struct student
 {
-    int code; // This declares a new user defined data type!
-    float salary;
+    int rollno; 
     char name[10];
+    float marks;
 }; // semicolon is important
 
-int main()
-{
-    struct employee e1;
-    e1.code = 56;
-    struct employee *ptr;
-    ptr = &e1;
-    // now we can print structure elements using:
-    // printf("%d", (*ptr).code);
-    printf("%d", ptr->code); // Exactly same as  (*ptr).code
+int main(){
+    int a = 5;
+    int *ptr = &a;
+    struct student student = {1,"ram",99};
+    struct student *stu_ptr=&student;
 
-    return 0;
+    printf("Roll no : %d Name : %s  Marks : %.2f",student.rollno,student.name,student.marks);
+    printf("\nRoll no : %d Name : %s  Marks : %.2f",stu_ptr->rollno,stu_ptr->name,stu_ptr->marks);
+
+return 0;
 }
+
