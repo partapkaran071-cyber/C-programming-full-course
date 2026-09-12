@@ -1,0 +1,2 @@
+Hello I am Karan and this is my first writing operation in C Programming
+The square of 3 is 9
